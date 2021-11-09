@@ -4,9 +4,78 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
 		<title>Project 1</title>
 	</head>
 	<body>
-		<h1>Form</h1>
+		<h1 class="heading">Form</h1>
+		<form action="#" class="form">
+			<div class="maindiv">
+				<label for="username">Username:</label>
+				<input type="text" id="username" placeholder="Enter your username" />
+			</div>
+			<div class="maindiv">
+				<label for="password">Password:</label>
+				<input
+					type="password"
+					name="Password"
+					id="password"
+					placeholder="Enter your password"
+				/>
+			</div>
+			<div class="maindiv">
+				<label for="city">City of Employment:</label>
+				<input type="text" id="city" placeholder="Enter your city name" />
+			</div>
+			<div class="maindiv">
+				<label for="server">Web server:</label>
+
+				<select name="server" id="server">
+					<option value="webserver">Choose a web server</option>
+					<option value="apache">Apache</option>
+					<option value="tomcat">Tomcat</option>
+					<option value="localserver">Local Server</option>
+				</select>
+			</div>
+			<div class="maindiv">
+				<label>Please specify your role:</label>
+				<div>
+					<input type="radio" name="role" id="admin" value="Admin" />
+					<label for="admin">Admin</label><br />
+					<input type="radio" name="role" id="engineer" value="Engineer" />
+					<label for="engineer">Engineer</label><br />
+					<input type="radio" name="role" id="manager" value="Manager" />
+					<label for="manager">Manager</label><br />
+					<input type="radio" name="role" id="guest" value="Guest" />
+					<label for="guest">Guest</label>
+				</div>
+			</div>
+			<div class="maindiv">
+				<label>Single Sign-on to the following activity:</label>
+				<div>
+					<input type="checkbox" name="mail" id="mail" value="Mail" />
+					<label for="mail">Mail</label><br />
+					<input type="checkbox" name="payroll" id="payroll" value="Payroll" />
+					<label for="payroll">Payroll</label><br />
+					<input
+						type="checkbox"
+						name="selfservice"
+						id="selfservice"
+						value="Self-Service"
+					/>
+					<label for="selfservice">Self-Service</label>
+				</div>
+			</div>
+			<div class="maindiv" id="btn">
+				<input
+					type="submit"
+					name="Login"
+					id="login"
+					class="btn"
+					value="Login"
+				/>
+				<input type="reset" name="Reset" id="reset" class="btn" value="Reset" />
+			</div>
+		</form>
 	</body>
 </html>
